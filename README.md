@@ -114,6 +114,119 @@ and downtime consistency checks.
 
 Upcoming steps include publishing the Bronze and Silver processing code with synthetic examples and documenting the validation results.
 
+
+## 🚀 How to Run
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/andressaldanha/industrial-data-monitoring.git
+cd industrial-data-monitoring
+```
+
+### 2. Create a virtual environment
+
+```bash
+python -m venv .venv
+```
+
+Activate it:
+
+**Linux / macOS**
+```bash
+source .venv/bin/activate
+```
+
+**Windows PowerShell**
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+### 3. Install dependencies
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+### 4. Execute the data pipeline
+
+Run the Bronze layer:
+
+```bash
+python notebooks/bronze.py
+```
+
+Run the Silver layer:
+
+```bash
+python notebooks/silver.py
+```
+
+### 5. Generate the efficiency chart
+
+```bash
+python scripts/generate_chart.py
+```
+
+The generated chart is saved at:
+
+`assets/efficiency_chart.png`
+
+### 6. Run automated tests
+
+```bash
+python -m pytest tests/ -v
+```
+
+The project includes automated tests for data ingestion,
+column validation, efficiency classification and downtime rules.
+
+## 📁 Project Structure
+
+```text
+industrial-data-monitoring/
+├── .github/workflows/
+│   └── python-tests.yml
+├── .vscode/
+│   └── settings.json
+├── assets/
+│   └── efficiency_chart.png
+├── data/
+│   └── production_sample.xlsx
+├── notebooks/
+│   ├── bronze.py
+│   └── silver.py
+├── scripts/
+│   └── generate_chart.py
+├── tests/
+│   ├── test_bronze.py
+│   └── test_silver.py
+├── .gitignore
+├── README.md
+└── requirements.txt
+```
+
+## 🔐 Data Privacy
+
+All production records in this public repository are synthetic.
+
+The project demonstrates industrial data monitoring concepts
+without exposing confidential company information.
+
+## ✅ Automated Quality Checks
+
+The project uses Pytest and GitHub Actions to validate
+the processing logic automatically.
+
+Current test suite: **9 automated tests**.
+
+## 🔮 Future Improvements
+
+- Additional synthetic datasets
+- Historical trend analysis
+- More advanced analytical dashboards
+- Enhanced data quality monitoring
+
 ---
 
 <div align="center">
