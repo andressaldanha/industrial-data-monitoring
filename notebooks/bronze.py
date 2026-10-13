@@ -18,6 +18,17 @@ def load_production_data(file_path):
     return df
 
 
+
 if __name__ == "__main__":
+    from pathlib import Path
+
+    project_root = Path(__file__).resolve().parent.parent
+    file_path = project_root / "data" / "production_sample.xlsx"
+
+    df = load_production_data(file_path)
+
     print("Industrial Data Monitoring - Bronze Layer")
-    print("Initial data ingestion module ready.")
+    print(f"Rows loaded: {len(df)}")
+    print(f"Columns loaded: {len(df.columns)}")
+    print(df.head())
+
