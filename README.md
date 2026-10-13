@@ -59,6 +59,42 @@ Data cleaning, standardization, and validation.
 
 This public portfolio project will use synthetic data. No confidential company information or employee records will be published.
 
+
+## 📊 Processing Results
+
+The Bronze and Silver layers were tested using
+12 synthetic industrial production records.
+
+### Efficiency Monitoring
+
+| Classification | Records |
+|---|---:|
+| Below 90% | 6 |
+| Within expected range | 3 |
+| Above 100% | 3 |
+| **Total** | **12** |
+
+### Downtime Validation
+
+The Silver layer identified **3 records with potential missing downtime**.
+
+These records are flagged for investigation based on
+differences between standard time, actual operation time,
+and reported downtime.
+
+### Data Pipeline
+
+Excel Dataset → Bronze Layer → Silver Layer
+
+**Bronze:** Data ingestion, column validation and type conversion.
+
+**Silver:** Efficiency classification, excess time calculation
+and downtime consistency checks.
+
+> All data used in this public project is synthetic.
+> The results do not represent real company operations.
+
+
 ## 🚧 Project Status
 
 **In development**
