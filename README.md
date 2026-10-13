@@ -3,6 +3,10 @@
 
 #  Industrial Data Monitoring
 
+
+[![Python Tests](https://github.com/andressaldanha/industrial-data-monitoring/actions/workflows/python-tests.yml/badge.svg)](https://github.com/andressaldanha/industrial-data-monitoring/actions/workflows/python-tests.yml)
+  
+
 ### Industrial Data Analytics | Python | Databricks
 
 **Transforming industrial production data into actionable insights.**
