@@ -3,3 +3,4 @@ openpyxl>=3.1,<4.0
 pandas>=2.2,<3.0
 openpyxl>=3.1,<4.0
 pytest>=8,<10
+matplotlib>=3.9,<4.0

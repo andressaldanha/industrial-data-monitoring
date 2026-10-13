@@ -69,6 +69,15 @@ This public portfolio project will use synthetic data. No confidential company i
 The Bronze and Silver layers were tested using
 12 synthetic industrial production records.
 
+## 📈 Efficiency Chart
+
+The chart below shows the efficiency classification
+of the 12 synthetic production records used in this project.
+
+<p align="center">
+  <img src="assets/efficiency_chart.png" alt="Industrial Efficiency Monitoring Chart" width="800"/>
+</p>
+
 ### Efficiency Monitoring
 
 | Classification | Records |
